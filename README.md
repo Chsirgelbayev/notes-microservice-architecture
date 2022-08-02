@@ -4,7 +4,7 @@
 
 Хост: https://usermicroserviceapp.herokuapp.com
 
--   [**Регистрация**](https://usermicroserviceapp.herokuapp.com/auth/register) - Метод: POST, Поля: name, email, password. После регистрация приходит cообщение на почту mail.ru;
+-   [**Регистрация**](https://usermicroserviceapp.herokuapp.com/auth/register) - Метод: POST, Поля: name, email, password. После регистрация приходит cообщение на почту mail.ru. Могут попасть в рассылки!
 ```Javascript
   body: {
     "name": "Jonh Doe",
