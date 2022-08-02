@@ -1,0 +1,625 @@
+{
+	"info": {
+		"_postman_id": "c4cdb758-e8c7-4005-b87e-0f8bfb46b53c",
+		"name": "Notes_microservices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19850215"
+	},
+	"item": [
+		{
+			"name": "Records service",
+			"item": [
+				{
+					"name": "Create record",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// pm.environment.set(\"TOKEN\", pm.response.json().token)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Enctype",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNiNjFlNTc1NzIxZGRiY2UyMDlhZTUyOGEyIiwiaWF0IjoxNjU5MzkzMjY3LCJleHAiOjE2NTkzOTY4Njd9.mgIOWGXuOHzh7OCSM0p9e7UQ-BUfB0rTRlLlvcrWXYI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"test_record\",\r\n    \"body\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has \"\r\n}"
+						},
+						"url": {
+							"raw": "https://recordsmicroserviceapp.herokuapp.com/records",
+							"protocol": "https",
+							"host": [
+								"recordsmicroserviceapp",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get record",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"TOKEN\", pm.response.json().token)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNiNjFlNTc1NzIxZGRiY2UyMDlhZTUyOGEyIiwiaWF0IjoxNjU5MzkzMjY3LCJleHAiOjE2NTkzOTY4Njd9.mgIOWGXuOHzh7OCSM0p9e7UQ-BUfB0rTRlLlvcrWXYI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://recordsmicroserviceapp.herokuapp.com/records/1",
+							"protocol": "https",
+							"host": [
+								"recordsmicroserviceapp",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"records",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get records",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// pm.environment.set(\"TOKEN\", pm.response.json().token)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNiNjFlNTc1NzIxZGRiY2UyMDlhZTUyOGEyIiwiaWF0IjoxNjU5MzkzMjY3LCJleHAiOjE2NTkzOTY4Njd9.mgIOWGXuOHzh7OCSM0p9e7UQ-BUfB0rTRlLlvcrWXYI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://recordsmicroserviceapp.herokuapp.com/records",
+							"protocol": "https",
+							"host": [
+								"recordsmicroserviceapp",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update record",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// pm.environment.set(\"TOKEN\", pm.response.json().token)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Enctype",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNiNjFlNTc1NzIxZGRiY2UyMDlhZTUyOGEyIiwiaWF0IjoxNjU5MzkzMjY3LCJleHAiOjE2NTkzOTY4Njd9.mgIOWGXuOHzh7OCSM0p9e7UQ-BUfB0rTRlLlvcrWXYI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"test_record\",\r\n    \"body\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has \"\r\n}"
+						},
+						"url": {
+							"raw": "https://recordsmicroserviceapp.herokuapp.com/records",
+							"protocol": "https",
+							"host": [
+								"recordsmicroserviceapp",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete record",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// pm.environment.set(\"TOKEN\", pm.response.json().token)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Enctype",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNiNjFlNTc1NzIxZGRiY2UyMDlhZTUyOGEyIiwiaWF0IjoxNjU5MzkzMjY3LCJleHAiOjE2NTkzOTY4Njd9.mgIOWGXuOHzh7OCSM0p9e7UQ-BUfB0rTRlLlvcrWXYI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://recordsmicroserviceapp.herokuapp.com/records/2",
+							"protocol": "https",
+							"host": [
+								"recordsmicroserviceapp",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"records",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth service",
+			"item": [
+				{
+					"name": "Registration",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// pm.environment.set(\"TOKEN\", pm.response.json().token)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Jonh Doe\",\r\n    \"email\": \"doe@msail.ru\",\r\n    \"password\": \"1234AB1234a\"\r\n}"
+						},
+						"url": {
+							"raw": "https://usermicroserviceapp.herokuapp.com/auth/register",
+							"protocol": "https",
+							"host": [
+								"usermicroserviceapp",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Authentication",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"TOKEN\", pm.response.json().token)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"doe@mail.ru\",\r\n    \"password\": \"1234AB1234a\"\r\n}"
+						},
+						"url": {
+							"raw": "https://usermicroserviceapp.herokuapp.com/auth/login",
+							"protocol": "https",
+							"host": [
+								"usermicroserviceapp",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// pm.environment.set(\"TOKEN\", pm.response.json().token)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Enctype",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Jonh Doe\",\r\n    \"email\": \"doe@mail.ru\",\r\n    \"password\": \"1234AB1234a\"\r\n}"
+						},
+						"url": {
+							"raw": "https://usermicroserviceapp.herokuapp.com/users",
+							"protocol": "https",
+							"host": [
+								"usermicroserviceapp",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"TOKEN\", pm.response.json().token)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://usermicroserviceapp.herokuapp.com/users/5df8a48d17f7b69235eb9a1851",
+							"protocol": "https",
+							"host": [
+								"usermicroserviceapp",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"5df8a48d17f7b69235eb9a1851"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get users",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// pm.environment.set(\"TOKEN\", pm.response.json().token)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://usermicroserviceapp.herokuapp.com/users",
+							"protocol": "https",
+							"host": [
+								"usermicroserviceapp",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update profile",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// pm.environment.set(\"TOKEN\", pm.response.json().token)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Enctype",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"doe@msail.ru\",\r\n    \"password\": \"1234AB1234a\"\r\n}"
+						},
+						"url": {
+							"raw": "https://usermicroserviceapp.herokuapp.com/users/1",
+							"protocol": "https",
+							"host": [
+								"usermicroserviceapp",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// pm.environment.set(\"TOKEN\", pm.response.json().token)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Enctype",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://usermicroserviceapp.herokuapp.com/users/28fa680127da6da3838fe4bd04",
+							"protocol": "https",
+							"host": [
+								"usermicroserviceapp",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"28fa680127da6da3838fe4bd04"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
