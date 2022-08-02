@@ -19,7 +19,7 @@
 ```
 -   [**Создать пользователя**](https://usermicroserviceapp.herokuapp.com/users) - Метод: POST, Поля: name, email, password;
 -   [**Получить список всех пользователей**](https://usermicroserviceapp.herokuapp.com/users) - Метод:GET;
--   [**Получить пользователя**](https://usermicroserviceapp.herokuapp.com/users/) - Метод: GET;
+-   [**Получить пользователя**](https://usermicroserviceapp.herokuapp.com/users/1) - Метод: GET;
 -   [**Обновить пользователя**](https://usermicroserviceapp.herokuapp.com/users/1) - Метод: PUT;
 ```Javascript
   body: {
@@ -40,4 +40,5 @@
   }
 ```
 -   [**Получить список всех записей**](https://usermicroserviceapp.herokuapp.com/users) - Метод:GET;
--   [**git commands**](wiki/git-commands.md) - часто используемые команды git
+-   [**Получить запись**](https://usermicroserviceapp.herokuapp.com/users/:id) - Метод: GET;
+
