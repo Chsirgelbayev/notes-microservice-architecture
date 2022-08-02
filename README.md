@@ -2,6 +2,8 @@
 
 Микросервис пользователей
 
+Хост: https://usermicroserviceapp.herokuapp.com
+
 -   [**Регистрация**](https://usermicroserviceapp.herokuapp.com/auth/register) - Метод: POST, Поля: name, email, password. После регистрация приходит cообщение на почту mail.ru;
 ```Javascript
   body: {
@@ -32,6 +34,8 @@
 
 Микросервис Записей
 
+Хост: https://recordsmicroserviceapp.herokuapp.com
+
 -   [**Создать запись**](https://recordsmicroserviceapp.herokuapp.com/records) - Метод: POST, Поля: title, body;
 ```Javascript
   body: {
@@ -49,5 +53,9 @@
 -   [**Получить список всех записей**](https://usermicroserviceapp.herokuapp.com/users) - Метод:GET;
 -   [**Получить запись**](https://usermicroserviceapp.herokuapp.com/users/:id) - Метод: GET;
 -   [**Удалить запись**](https://recordsmicroserviceapp.herokuapp.com/records/2) - Метод: DELETE;
+
+Миеросервис Email-рассылки
+
+Хост: https://emailmicroserviceapp.herokuapp.com/
 
 
