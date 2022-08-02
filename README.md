@@ -18,6 +18,13 @@
   }
 ```
 -   [**Создать пользователя**](https://usermicroserviceapp.herokuapp.com/users) - Метод: POST, Поля: name, email, password;
+```Javascript
+  body: {
+    "name": "Jonh Doe",
+    "email": "doe@mail.ru",
+    "password": "1234AB1234a"
+}
+```
 -   [**Получить список всех пользователей**](https://usermicroserviceapp.herokuapp.com/users) - Метод:GET;
 -   [**Получить пользователя**](https://usermicroserviceapp.herokuapp.com/users/:id) - Метод: GET;
 -   [**Обновить пользователя**](https://usermicroserviceapp.herokuapp.com/users/:id) - Метод: PUT;
