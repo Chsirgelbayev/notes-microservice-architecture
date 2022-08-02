@@ -54,7 +54,7 @@
 -   [**Получить запись**](https://usermicroserviceapp.herokuapp.com/users/:id) - Метод: GET;
 -   [**Удалить запись**](https://recordsmicroserviceapp.herokuapp.com/records/2) - Метод: DELETE;
 
-Миеросервис Email-рассылки
+Микросервис Email-рассылки
 
 Хост: https://emailmicroserviceapp.herokuapp.com/
 
