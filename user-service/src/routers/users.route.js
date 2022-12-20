@@ -1,7 +1,7 @@
 import express from 'express';
 import usersController from '../controllers/users.controller.js';
 import { protect } from '../middlewares/authVerifyToken.js';
-import { asyncHandler } from '../middlewares/asyncHandler.js';
+import { asyncHandler } from '../utils/asyncHandler.js';
 import { validationHandler } from '../middlewares/validatorHandler.js';
 import {
     createUserValidator,

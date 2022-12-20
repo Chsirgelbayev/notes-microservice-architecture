@@ -2,13 +2,10 @@ import express from 'express';
 import morgan from 'morgan';
 import colors from 'colors';
 import cookieParser from 'cookie-parser';
-
 import config from './config/config.js';
-
-import auth from './routers/auth.js';
-import users from './routers/users.js';
+import auth from './routers/auth.route.js';
+import users from './routers/users.route.js';
 import { errorsHandler } from './middlewares/errorsHandler.js';
-
 import { conectionDB } from './config/db.js';
 
 const app = express();

@@ -2,10 +2,8 @@ import express from 'express';
 import colors from 'colors';
 import morgan from 'morgan';
 import cookieParser from 'cookie-parser';
-
 import config from './config/config.js';
-
-import records from './routers/records.js';
+import records from './routers/records.route.js';
 import { errorsHandler } from './middlewares/errorsHandler.js';
 import { conectionDB } from './config/db.js';
 
