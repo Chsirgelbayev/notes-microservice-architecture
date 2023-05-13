@@ -1,6 +1,6 @@
-# Сервис заметок 
+# Description
 
-Микросервис пользователей
+Backend of notes made on microservices
 
 Хост: https://usermicroserviceapp.herokuapp.com
 
